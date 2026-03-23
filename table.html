@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+         
+        width: 800px;
+        height: 700px;
+        border: 1px solid black;
+        padding: 2rem;
+        border-radius: 5px;
+        
+         
+    }
+    h1 {
+        width: 100%;
+        font-size: 2rem;
+        color: blue;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+    table {
+       width: 80%;
+       border-collapse: collapse;
+       border: 1px solid black;
+       margin-left: 80px;
+       margin-bottom: 30px;
+
+    }
+    th,td {
+        padding: 5px;
+        border-bottom: 1px solid black;
+         border-right: 1px solid black;
+         text-align: center;
+    }
+    tr:nth-child(even){
+        background-color: green;
+        color: white;
+    }
+    th {
+        background-color: aqua;
+    }
+    .forms {
+        width: 100%;
+        border: 1px solid black;
+        padding: 30px;
+         
+    }
+    .name , .age , .location {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 50px;
+    }
+    .status {
+        display: flex;
+        flex-direction: row;
+        margin-left: 50px;
+        gap: 20px;
+    }
+    input{
+        margin-bottom: 5px;
+        width: 80%;
+         padding: 5px 8px;
+        outline: none;
+        border-radius: 5px;
+    }
+     .present,.absent {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+     }
+     .button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+     }
+     button {
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        background: green;
+        color: white;
+        border-radius: 5px;
+     }
+    
+</style>
+<body>
+    <div class="container">
+        <h1>Attendance Record</h1>
+        <table>
+            <tr> 
+            <th>Name</th>
+            <th>Age</th>
+            <th>Location</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>vetrivel</td>
+            <td>28</td>
+            <td>chennai</td>
+            <td>present</td>
+        </tr>
+        <tr>
+            <td>krishna</td>
+            <td>27</td>
+            <td>chennai</td>
+            <td>present</td>
+        </tr>
+        <tr>
+            <td>kumar</td>
+            <td>22</td>
+            <td>salem</td>
+            <td>absent</td>
+        </tr>
+        <tr>
+            <td>vijay</td>
+            <td>28</td>
+            <td>madurai</td>
+            <td>present</td>
+        </tr>
+           
+        </table>
+        <div class="forms">
+             <div class="name">
+                <label for="">Enter Student name </label>
+                <input type="text">
+             </div>
+             <div class="age">
+                <label for="">Enter Student age </label>
+                <input type="text">
+             </div>
+             <div class="location">
+                <label for="">Enter location </label>
+                <input type="text">
+             </div>
+             <div class="status">
+                <div class="present">
+                    <input type="radio" name="status" value="green">
+                 <label for="">Present</label>
+                </div> 
+                <div class="absent">
+                    <input type="radio" name="status" value="red">
+                 <label for="">Absent</label>
+                </div>
+                 
+             </div>
+        </div>
+        <div class="button">
+            <button>Submit Application</button>
+        </div>
+    </div>
+</body>
+</html>
