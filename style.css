@@ -1,0 +1,11 @@
+
+.bg-container{
+    background-color: rgba(19, 19, 94, 0.849);
+    height: 100vh;
+    background-size: cover;
+}
+.navbar{
+  background-color: cornflowerblue;
+  height: 50px;
+  background-size: contain;
+}
